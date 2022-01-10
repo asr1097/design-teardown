@@ -1,3 +1,9 @@
+:root {
+    --gray-prim: rgba(110, 110, 110, 1);
+    --gray-snd: rgba(180, 180, 180, 1);
+    --gray-third: rgba(240, 240, 240, 1)
+}
+
 *,
 *:before,
 *:after {
@@ -8,4 +14,151 @@ html, body {
     margin: 0;
     padding: 0;
     font-size: 16px;
+}
+
+article {
+    padding: 1rem;
+}
+
+h1 {
+    font-size: 2.8rem;
+    font-weight: 300;
+    font-family: "Titan One", cursive;
+}
+
+h2 {
+    font-size: 2.2rem;
+    font-weight: 300;
+    font-family: "Titan One", cursive;
+}
+
+p {
+    font-size: 1.5rem;
+    font-family: "Playfair Display", serif;
+}
+
+/* Header */
+
+nav {
+    height: 11rem;
+}
+
+.main-nav {
+    height: 60%;
+    background-color: var(--gray-prim);
+}
+
+.cathegories-nav {
+    height: 40%;
+    background-color: var(--gray-snd);
+}
+
+/* Main */
+
+main {
+    padding: 1rem 4rem;
+}
+
+.articles-div-main {
+    display: flex;
+    justify-content: space-between;
+    height: 40rem;
+    margin-bottom: 10rem;
+}
+
+.newsletter {
+    flex-basis: 30%;
+    height: 90%;
+    background-color: var(--gray-third);
+}
+
+.articles-div {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 60%;
+    margin-right: 1rem;
+}
+
+
+.articles-div > * {
+    margin-bottom: 1rem;
+}
+
+.article-prim {
+    flex: 3;
+    background-color: var(--gray-snd);
+}
+
+.article-snd {
+    flex: 1;
+    background-color: var(--gray-snd);
+}
+
+.newsletter {
+    background-color: var(--gray-third);
+}
+
+/* Guides */
+
+.guides, .latest-post-div, .com-links-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.guide {
+    flex-basis: 47%;
+    height: 20rem;
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+    background-color: var(--gray-prim);
+}
+
+.guide:nth-child(2) {
+    margin-left: 1rem;
+}
+
+/* Latest posts */
+
+.post {
+    flex-basis: 40%;
+    min-height: 25rem;
+    margin-bottom: 2rem;
+    background-color: var(--gray-snd);
+}
+
+.spacer {
+    min-height: 100vh;
+    margin-bottom: 2rem;
+    background-color: var(--gray-third);
+}
+
+/* Community links */
+
+.main-com-link {
+    flex-basis: 100%;
+    min-height: 20rem;
+    margin-bottom: 2rem;
+    background-color: var(--gray-snd);
+}
+
+.com-link {
+    flex-basis: 40%;
+    min-height: 15rem;
+    margin-bottom: 2rem;
+    background-color: var(--gray-snd);
+}
+
+/* Footer */
+
+footer {
+    min-height: 100vh;
+    min-width: 100wh;
+    background-color: var(--gray-prim);
+}
+
+/* Text class */
+
+.text {
+    background-color: transparent;
 }
